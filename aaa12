@@ -1,0 +1,43 @@
+programa {
+    funcao inicio() {
+        // Declarando variável para armazenar o número do mês
+        inteiro numeroMes
+
+        // Solicitando ao usuário que insira o número do mês
+        escreva("Digite um número inteiro entre 1 e 12: ")
+        leia(numeroMes)
+
+        // Verificando se o número do mês está dentro do intervalo válido
+        se (numeroMes >= 1 && numeroMes <= 12) {
+            // Verificando qual é o número do mês e exibindo o nome correspondente
+            se (numeroMes == 1) {
+                escreva("Janeiro")
+            } senao se (numeroMes == 2) {
+                escreva("Fevereiro")
+            } senao se (numeroMes == 3) {
+                escreva("Março")
+            } senao se (numeroMes == 4) {
+                escreva("Abril")
+            } senao se (numeroMes == 5) {
+                escreva("Maio")
+            } senao se (numeroMes == 6) {
+                escreva("Junho")
+            } senao se (numeroMes == 7) {
+                escreva("Julho")
+            } senao se (numeroMes == 8) {
+                escreva("Agosto")
+            } senao se (numeroMes == 9) {
+                escreva("Setembro")
+            } senao se (numeroMes == 10) {
+                escreva("Outubro")
+            } senao se (numeroMes == 11) {
+                escreva("Novembro")
+            } senao {
+                escreva("Dezembro")
+            }
+        } senao {
+            // Se o número inserido estiver fora do intervalo válido, exibir mensagem de erro
+            escreva("Número inválido! Insira um número entre 1 e 12.")
+        }
+    }
+}
